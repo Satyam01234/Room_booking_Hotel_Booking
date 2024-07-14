@@ -1,0 +1,350 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{504A5538-ED3B-4977-8E22-618DD21C7342}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Room_booking_Hotel_Booking</RootNamespace>
+    <AssemblyName>Room_booking_Hotel_Booking</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44375</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_registraion.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="demo2.aspx" />
+    <Content Include="imageuploadroomManagement\hotel.jpg" />
+    <Content Include="image\20669744.jpg" />
+    <Content Include="image\royal-hotel.jpg" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\AUTHORS.txt" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\external\jquery\jquery.js" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\images\ui-icons_444444_256x240.png" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\images\ui-icons_555555_256x240.png" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\images\ui-icons_777620_256x240.png" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\images\ui-icons_777777_256x240.png" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\index.html" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\jquery-ui.css" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\jquery-ui.js" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\jquery-ui.min.css" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\jquery-ui.min.js" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\jquery-ui.structure.css" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\jquery-ui.structure.min.css" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\jquery-ui.theme.css" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\jquery-ui.theme.min.css" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\LICENSE.txt" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\AUTHORS.txt" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\external\jquery\jquery.js" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\images\ui-icons_444444_256x240.png" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\images\ui-icons_555555_256x240.png" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\images\ui-icons_777620_256x240.png" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\images\ui-icons_777777_256x240.png" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\index.html" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\jquery-ui.css" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\jquery-ui.js" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\jquery-ui.min.css" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\jquery-ui.min.js" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\jquery-ui.structure.css" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\jquery-ui.structure.min.css" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\jquery-ui.theme.css" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\jquery-ui.theme.min.css" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\LICENSE.txt" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="admin_login_master.aspx" />
+    <Content Include="tap_pan.aspx" />
+    <Content Include="user_login_master.aspx" />
+    <Content Include="booking.aspx" />
+    <Content Include="demo.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="user_login.aspx">
+      <BrowseToURL>~/user_login.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Tap_pan_registraion.aspx" />
+    <Content Include="adminPanel.aspx" />
+    <Content Include="book_room.aspx" />
+    <Content Include="jquery-ui-1.13.2\jquery-ui-1.13.2\package.json" />
+    <Content Include="jquery-ui-1.13.2.custom\jquery-ui-1.13.2.custom\package.json" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="registration.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_registraion.aspx.cs">
+      <DependentUpon>admin_registraion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_registraion.aspx.designer.cs">
+      <DependentUpon>admin_registraion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="demo2.aspx.cs">
+      <DependentUpon>demo2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demo2.aspx.designer.cs">
+      <DependentUpon>demo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login_master.aspx.cs">
+      <DependentUpon>admin_login_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_login_master.aspx.designer.cs">
+      <DependentUpon>admin_login_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tap_pan.aspx.cs">
+      <DependentUpon>tap_pan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tap_pan.aspx.designer.cs">
+      <DependentUpon>tap_pan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usert_panel.Master.cs">
+      <DependentUpon>usert_panel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usert_panel.Master.designer.cs">
+      <DependentUpon>usert_panel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user_login_master.aspx.cs">
+      <DependentUpon>user_login_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_login_master.aspx.designer.cs">
+      <DependentUpon>user_login_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="booking.aspx.designer.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demo.aspx.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demo.aspx.designer.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_login.aspx.cs">
+      <DependentUpon>user_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_login.aspx.designer.cs">
+      <DependentUpon>user_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tap_pan_registraion.aspx.cs">
+      <DependentUpon>Tap_pan_registraion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tap_pan_registraion.aspx.designer.cs">
+      <DependentUpon>Tap_pan_registraion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPanel.aspx.cs">
+      <DependentUpon>adminPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPanel.aspx.designer.cs">
+      <DependentUpon>adminPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="book_room.aspx.cs">
+      <DependentUpon>book_room.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="book_room.aspx.designer.cs">
+      <DependentUpon>book_room.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <Content Include="Site1.Master" />
+    <Content Include="usert_panel.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59212</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44375/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

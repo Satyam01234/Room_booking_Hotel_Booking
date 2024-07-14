@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Room_booking_Hotel_Booking.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <%--<script src="Scripts/jquery-3.6.0.min.js"></script>--%>
+    <%-- <script src="Scripts/jquery-3.6.0.min.js"></script>--%>
+     <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link href=" https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+
+   
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+ 
+  
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+       
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            float: right;
+            width: 95px;
+        }
+
+        #foote{
+            background-color:antiquewhite;
+            padding:50px;
+        }
+
+        #foot{
+            background-color:aquamarine;
+            padding-bottom:50px;
+            
+        }
+         
+        /*#bd{*/
+           
+            /*background-color:lightcoral;*/
+            /*background-image=""
+            background-size:cover;
+           
+        }*/
+
+            body {
+                background-image:url("\imageuploadroomManagement\hotel.jpg");
+                background-size: cover;
+
+
+
+            }
+
+    </style>
+</head>
+
+<body id="bd">
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <span style="font-size: 40px; font-family: Edwardian Script ITC;">Royals Hotel</span>
+                        <img src="image/royal-hotel.jpg" class="img-fluid" alt="Cinque Terre" width="90" height="70" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="font-size: 20px" href="admin_login_master.aspx">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" style="font-size: 20px" href="#">Categoies
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" style="font-size: 20px">About</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link active" href="#" style="font-size: 20px">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                           
+                            <asp:HyperLink ID="Registration" href="Tap_pan_registraion.aspx" style="margin: 10px" class="btn btn-outline-warning"  runat="server">Registration</asp:HyperLink>
+                         <%--    <asp:Button ID="Button2" runat="server" Text="Registration" class="btn btn-outline-warning" style="margin: 10px" OnClick="Button2_Click" />--%>
+
+                            <asp:HyperLink ID="Login" runat="server"  href="user_login_master.aspx" class="btn btn-outline-warning" style="margin: 10px">Login</asp:HyperLink>
+                            <%--<asp:Button ID="Button1" runat="server" Text="Login" class="btn btn-outline-warning" style="margin: 10px" OnClick="Button1_Click" />--%>
+                            <asp:Label ID="Label1" runat="server" style="margin: 10px" Text="Label"> </asp:Label>
+                            
+                            <asp:Button ID="Button2" runat="server" class="btn btn-outline-warning" Text="Logout" OnClick="Button2_Click1"  />
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <br />
+            <br />
+            <%--main contant placeholder--%>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <br />
+            <br />
+            <!-- Footer -->
+            <footer class="page-footer font-small cyan darken-3" >
+
+                <!-- Footer Elements -->
+                <div class="container-fluid" id="foote">
+
+                    <!-- Grid row-->
+                    <div class="row">
+
+                        <!-- Grid column -->
+
+                        <div style="text-align:center">
+                            <a href="#" class="me-5 text-reset">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="me-5 text-reset">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="me-5 text-reset">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="me-5 text-reset">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="me-5 text-reset">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="me-5 text-reset">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row-->
+
+                </div>
+                <!-- Footer Elements -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-5" id="foot">
+                    © 2022 Copyright:<a href="/">Royal_Hotel.com</a>
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+        </div>
+    </form>
+    
+    
+</body>
+</html>
